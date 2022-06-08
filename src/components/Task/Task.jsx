@@ -14,7 +14,9 @@ const Task = ({ task, handleUpdateTask, handleDeleteTask }) => {
   }
 
   const updateTaskCount = (newCount) => {
-    if (newCount > 0) {
+    if (newCount <= 0) {
+      return;
+    } else {
       handleUpdateTask({
         ...task,
         count: newCount,
@@ -24,7 +26,9 @@ const Task = ({ task, handleUpdateTask, handleDeleteTask }) => {
 
   return (
     <li data-testid="task" className={styles.task}>
-      <div className={`${styles.taskTitle} ${task.done ? styles.taskDone : ""}`}>
+      <div
+        className={`${styles.taskTitle} ${task.done ? styles.taskDone : ""}`}
+      >
         <input
           type="checkbox"
           data-testid="task-checkbox"
@@ -34,7 +38,11 @@ const Task = ({ task, handleUpdateTask, handleDeleteTask }) => {
         <div data-testid="task-text">{task.text}</div>
       </div>
       {/* Counter here */}
-      <Counter taskId={task.id} count={task.count} updateTaskCount={updateTaskCount} />
+      <Counter
+        taskId={task.id}
+        count={task.count}
+        updateTaskCount={updateTaskCount}
+      />
       <button
         data-testid="task-remove-button"
         className={styles.removebtn}

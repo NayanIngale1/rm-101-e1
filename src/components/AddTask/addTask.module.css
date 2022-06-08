@@ -1,3 +1,25 @@
 .addTask {
-  /* Sample */
+  display: flex;
+  padding: 10px 30px;
+  width: 100%;
+  border-bottom: 1px solid rgb(188, 188, 188);
+  gap: 10px;
+}
+.addTask input {
+  padding: 8px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+.addTask button {
+  padding: 5px 10px;
+  background-color: none;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+
+  border-radius: 5px;
 }

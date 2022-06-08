@@ -1,3 +1,16 @@
 .counter {
   /* TODO */
+  display: flex;
+  gap: 15px;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 5px;
+  align-items: center;
+}
+.counter button {
+  background-color: blueviolet;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
 }

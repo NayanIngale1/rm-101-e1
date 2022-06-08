@@ -1,3 +1,15 @@
+.container {
+  /* border: 1px solid red; */
+  margin: auto;
+  /* width:50%; */
+}
+
 .taskApp {
   /* Sample */
+  border: 1px solid #bfbfbf;
+  width: 35%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 15px auto;
+  border-radius: 20px;
+  min-height: 650px;
 }

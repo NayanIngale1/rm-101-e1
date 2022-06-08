@@ -1,7 +1,10 @@
 .tasks {
   /* sample */
+  /* border: 2px solid red; */
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px 20px;
 }
-
 .empty {
   /* sample */
 }
